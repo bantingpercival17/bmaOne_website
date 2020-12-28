@@ -1,0 +1,156 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f1f1f1;
+}
+
+.hold-transition {}
+
+.form-input-1 {
+    font-family: Helvetica, sans-serif;
+    padding: 5px;
+    padding-top: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+
+/* Hide all steps by default: */
+
+.tab {
+    display: none;
+    font-family: "Open Sans";
+}
+
+.step {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbbbbb;
+    border: none;
+    border-radius: 50%;
+    display: inline-block;
+    opacity: 0.5;
+}
+
+
+/* Mark the active step: */
+
+.step-active {
+    opacity: .5;
+    background-color: #4CAF50;
+}
+
+
+/* Mark the steps that are finished and valid: */
+
+.step-finish {
+    background-color: #4CAF50;
+    opacity: 1;
+}
+
+.watermark {
+    background-repeat: no-repeat;
+    width: 40%;
+    /* position: absolute; */
+    top: 4%;
+    right: 45%;
+}
+
+@media only screen and (max-width: 600px) {
+    .watermark {
+        width: 35%;
+        right: 35%;
+    }
+}
+
+.bma-font {
+    font-family: "Times New Roman", Times, serif;
+}
+
+.bma-font-header {
+    font-family: 'Montserrat';
+}
+
+.bma-font-sub-header {
+    font-family: Helvetica, sans-serif;
+}
+
+input {
+    font-family: "Open Sans";
+}
+
+label {
+    font-family: "Open Sans";
+}
+
+nav {
+    font-family: 'Montserrat';
+}
+
+#start-exam {
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding: 100px;
+}
+
+@media only screen and (max-width: 600px) {
+    #start-exam {
+        padding: 40px;
+        padding-top: 70px;
+    }
+}
+
+#start-exam {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1050;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    outline: 0;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.category-list div {
+    padding: 20px;
+    text-align: center;
+    color: #28a745;
+    /* background-color: rgba(131, 131, 131, .3); */
+}
+
+.bar {
+    height: 15px;
+    width: 150px;
+    margin: 0 2px;
+    background-color: #bbbbbb;
+    border: none;
+    display: inline-block;
+}
+
+.bar-active {
+    background-color: #4CAF50;
+    opacity: .5;
+}
+
+.bar-finish {
+    background-color: #4CAF50;
+}
+
+.fix {
+    overflow: hidden;
+    position: -webkit-sticky;
+    /* Safari */
+    position: sticky;
+}
+
+.form-layout {
+    display: none;
+}
